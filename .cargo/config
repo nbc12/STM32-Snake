@@ -1,0 +1,14 @@
+[target.thumbv7em-none-eabihf]
+runner = 'probe-run --chip STM32F411CEUx'
+rustflags = [
+  "-C", "link-arg=-Tlink.x",
+]
+
+[debug]
+target = "thumbv7em-none-eabihf"
+
+[release]
+target = "thumbv7em-none-eabihf"
+
+[env]
+DEFMT_LOG = "info"

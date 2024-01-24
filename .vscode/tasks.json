@@ -1,0 +1,22 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cargo",
+			"command": "flash",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--chip=STM32F411CEUx",
+				"--target=thumbv7em-none-eabihf",
+				"--release",
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"label": "rust: cargo flash release"
+		}
+	]
+}
